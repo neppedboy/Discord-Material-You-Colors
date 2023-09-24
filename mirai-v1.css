@@ -1,0 +1,147 @@
+/* Material You Discord Theme Mirai
+Made by NeppedBoy, Undone 
+Made for black theme only
+
+https://github.com/neppedboy/Discord-Material-You-Colors
+*/
+
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css");
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
+:root {
+  --app-font: "Google Sans";
+  --app-bg: var(--main-alt);
+  --accent-hue: 350;
+  --accent-saturation: 30%;
+  --accent-lightness: 50%;
+  --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
+  --accent-text-color: hsl(0,0%,100%);
+  --alert-hue: 0;
+  --alert-saturation: 85%;
+  --alert-lightness: 61%;
+  --alert-hsl: var(--alert-hue), calc(var(--alert-saturation) * var(--saturation-factor)), var(--alert-lightness);
+  --alert-text-color: hsl(0,0%,100%);
+  --success-color: #43b581;
+  --message-radius: 19px;
+  --message-padding-top: 8px;
+  --message-padding-side: 12px;
+  --main-textarea-color: var(--input-color);
+  --main-textarea-border: var(--input-border-color);
+  --main-textarea-radius: 24px;
+  --media-radius: calc(var(--message-radius) / 1.5);
+  --card-radius: 8px;
+  --card-radius-big: 18px;
+  --button-height: 36px;
+  --button-radius: calc(var(--button-height) / 2);
+  --button-padding: 0 24px;
+  --button-link-accent-color: var(--accent-hsl--material-you);
+  --button-link-accent-text-color: hsl(var(--accent-hsl--material-you));
+  --button-action-color: hsl(0,0%,100%);
+  --button-action-hover: 0.06;
+  --button-action-active: 0.12;
+  --input-height: var(--button-height);
+  --input-radius: var(--button-radius);
+  --input-padding: 0 12px;
+  --popout-radius: var(--card-radius);
+  --popout-radius-big: var(--card-radius-big);
+  --avatar-radius: 50%;
+  --channel-radius: 21px;
+  --spotify-color: #1db954;
+  --stream-color: #593695;
+  --stream-flash: 89,54,149;
+  --xbox-color: #107c10;
+  --tooltip-color: hsla(0,0%,38%,0.9);
+  --tooltip-text-color: hsl(0,0%,87%);
+  --tooltip-font-size: 12px;
+  --tooltip-padding: 8px;
+  --tooltip-radius: 8px;
+  --tooltip-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  --shadow-1dp: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+  --shadow-2dp: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+  --shadow-3dp: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+  --default-animation: cubic-bezier(0.4,0,0.2,1);
+  --default-time: 250ms;
+  --scrollbar-width: 10px;
+  --scrollbar-thin-width: 6px;
+  --window-title-bar: 22px;
+  --window-button-min: #ffbd44;
+  --window-button-max: #76BA99;
+  --window-button-close: #A9555E;
+  --code-font: Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
+}
+
+.theme-dark {
+  --main-color: #201a1b;
+  --main-alt: #201a1b;
+  --accent-hsl--material-you: var(--accent-hsl);
+  --accent-text-color--material-you: var(--accent-text-color);
+  --server-color: transparent;
+
+  --status-picker-color: #5a3f45;
+
+  --server-folder-color: rgba(255,255,255,0.045);
+
+  --message-color-hover: #5a3f45;
+  --message-color-alt: #5a3f45;
+
+  --sidebar-panel-color: #5a3f45;
+  --chat-color: var(--main-color);
+  --message-color: #201a1b;
+  --attachment-color: #5a3f45;
+  --typing-color: #201a1b;
+
+  --popout-color: rgba(32, 26, 27, 0.9);
+  --popout-color-alt: #363D4C;
+  --popout-header-border: rgba(255,255,255,0.125);
+  
+  --profile-body-background-color: #201a1b;
+  
+  --separator-color: rgba(255,255,255,0.125);
+  --header-secondary: #eaeaea;
+  --input-color: #5a3f45;
+  --input-color-alt: #363D4C; 
+  --input-border-color: hsl(0,0%,29%);
+  --input-text-color: hsl(0,0%,85%);
+  --input-placeholder-color: hsl(0,0%);
+  --input-pill-color: hsla(0,0%,100%,0.125);
+  --tab-border-color: #fff;
+  --interactive-muted: #676767;
+  --text-disabled: #666;
+  --menu-item-hover: rgba(255,255,255,0.075);
+  --menu-item-select: rgba(255,255,255,0.1);
+  --menu-item-select-accent-opacity: 0.3;
+  --menu-item-text-color: #aaa;
+
+  --card-color-outlined: transparent;
+  --card-color-filled: #201a1b;
+  --card-color-hover: hsl(225,6%,16%);
+  --card-color-active: hsl(225,6%,25%);
+  --card-color-alt: hsl(225,6%,18%);
+  --card-color-alt-hover: hsl(225,6%,21%);
+
+
+  --card-border-color: hsl(220,3%,26%);
+  --card-header-text-color: #eee;
+  --card-button-color: rgba(255,255,255,0.09);
+  --card-button-color-hover: rgba(255,255,255,0.135);
+  --activity-card-color: rgba(255,255,255,0.0475);
+  --activity-card-color--hover: rgba(255,255,255,0.06);
+  --activity-card-color--active: rgba(255,255,255,0.07);
+  --activity-card-color--inset: rgba(255,255,255,0.05);
+  
+  --button-link-color: 0,0%,100%;
+  --button-link-text-color: #fff;
+  --button-border-color: #444;
+  --switch-knob-color: hsl(0,0%,47%);
+  --switch-knob-color-modal: hsl(0,0%,56%);
+  --switch-slider-color: hsl(240,1%,20%);
+  --switch-slider-color-modal: var(--switch-slider-color);
+  --switch-color-modifier: 1.3;
+  --switch-color-checked: hsla(var(--accent-hsl),0.3);
+  --md-ripple-color: 0,100%,100%;
+  --emoji-category-header: rgba(44,47,51,0.95);
+  --scrollbar-color: 255,255,255;
+  --window-button: rgba(255,255,255,0.1);
+  --window-button-inactive: rgba(255,255,255,0.05);
+  --text-brand: hsl(var(--accent-hsl));
+  --text-link: hsl(var(--accent-hsl));
+}
